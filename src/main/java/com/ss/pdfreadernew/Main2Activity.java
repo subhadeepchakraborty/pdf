@@ -3,7 +3,6 @@ package com.ss.pdfreadernew;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
-import com.facebook.ads.*;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,12 +48,6 @@ public class Main2Activity extends AppCompatActivity {
 
 
     }
-    @Override
-    protected void onDestroy() {
-        if (adView != null) {
-            adView.destroy();
-        }
-        super.onDestroy();
-    }
+ 
 
 }
