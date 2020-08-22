@@ -1,7 +1,6 @@
 package com.ss.pdfreadernew;
 
 import androidx.annotation.NonNull;
-import com.facebook.ads.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -35,13 +34,7 @@ Button b1;
        getPermission();
 
     }
-    @Override
-    protected void onDestroy() {
-        if (adView != null) {
-            adView.destroy();
-        }
-        super.onDestroy();
-    }
+  
 
     public void getPermission() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) !=
