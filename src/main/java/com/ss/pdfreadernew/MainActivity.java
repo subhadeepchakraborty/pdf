@@ -1,7 +1,6 @@
 package com.ss.pdfreadernew;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.facebook.ads.*;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -88,13 +87,7 @@ public class MainActivity<string> extends AppCompatActivity {
             }
         });
     }
-    @Override
-    protected void onDestroy() {
-        if (adView != null) {
-            adView.destroy();
-        }
-        super.onDestroy();
-    }
+ 
     private static void searchFolderRecursive1(File folder)
     {
         if (folder != null)
